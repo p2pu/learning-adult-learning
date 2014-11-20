@@ -1,5 +1,5 @@
 # basic configuration
-baseurl:
+baseurl: hyperlocal
 markdown: redcarpet
 permalink: /:categories/:title/
 
