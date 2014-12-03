@@ -4,7 +4,7 @@ markdown: redcarpet
 permalink: /:categories/:title/
 
 
-ga_tracking_code: UA-5757664-19
+ga_tracking_code:
 p2pu_ga_tracking_code: UA-55722824-1
 
 # Some files we need to exclude, so Github can build the site
@@ -29,6 +29,6 @@ prose:
 
 # Set some personal styles and logo for your course
 # this is a hex value http://www.w3schools.com/tags/ref_colorpicker.asp
-jumbotron_color: "#05C6B4"
+jumbotron_color: 
 jumbotron_background_image: "header.svg"
-jumbotron_image: "box-icon.png"
+jumbotron_image:
