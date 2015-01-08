@@ -1,5 +1,5 @@
 # basic configuration
-baseurl: /learning-adult-learning
+baseurl: /learning-family-learning
 markdown: redcarpet
 permalink: /:categories/:title/
 
