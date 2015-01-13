@@ -31,3 +31,5 @@ Also, we're a non-profit and a distributed team (so we use the tools we recommen
 			
 ## I'm in--how do I get started?
 Head over [here]({{site.baseurl}}/modules/start/about-this-course/) to create your own course!
+
+This is just a test.
