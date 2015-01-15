@@ -1,10 +1,10 @@
 # basic configuration
-baseurl: /learning-family-learning
+baseurl: 
 markdown: redcarpet
 permalink: /:categories/:title/
 
 
-ga_tracking_code:
+ga_tracking_code: UA-58578580-1
 p2pu_ga_tracking_code: UA-55722824-1
 
 # Some files we need to exclude, so Github can build the site
