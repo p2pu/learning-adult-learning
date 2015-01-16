@@ -16,6 +16,14 @@ defaults:
       path: "modules" # an empty string here means all files in the project
     values:
       layout: "course_page"
+  -
+    scope:
+      path: "articles" # an empty string here means all files in the project
+    values:
+      layout: "article"
+      extra_css: ["/css/article.css"]
+
+
 
 prose:
   media: img

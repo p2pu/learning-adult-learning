@@ -1,0 +1,25 @@
+---
+layout: base
+---
+
+<header id="header" style="background-image: url('{{ site.baseurl }}/img/content/{{ page.featured-image }}');">
+	<div class="container relative">
+		<span class="header-logo">P2PU</span>
+
+		<h2>{{ page.headline }}</h2>
+		{% if page.subheading %}
+			<br />
+			<span class="h1-school-sub1">{{ page.subheading }}</span>
+		{% endif %}
+		{% if page.author %}
+			<span class="h1-school-sub2">By {{ page.author }}</span>
+		{% endif %}
+		{% if page.featured-image-contrib %}
+		<span class="header-tag">{{ page.featured-image-contrib }}</span>
+		{% endif %}
+	</div>
+</header>
+<div class="container markdown">
+{{ content }}
+</div>
+
