@@ -15,6 +15,9 @@
 				<li>
 					<a href="{{ site.baseurl }}/"><i class="fa fa-home"></i></a>
 				</li>
+        <li class="{% if page.url == "/about/index.html" %}active{% endif %}">
+					<a href="{{ site.baseurl }}/about/">About</a>
+				</li>
 				{% for module in site.data.course.modules %}
 					{% assign first_post = site.categories[module]|reverse|first %}
 					<li class="dropdown {% if page.categories[1] == module %}active{% endif %} {% if forloop.first %}first{% endif %} {% if forloop.last %}last{% endif %}">
@@ -25,7 +28,7 @@
 					</li>
 				{% endfor %}
 				<li>
-					<a href="http://discourse.p2pu.org/" target="_blank">Discussion</a>
+					<a href="http://discourse.p2pu.org/c/learning-family-learning" target="_blank">Discussion</a>
 				</li>
 			</ul>
 			<!--ul class="p2pu-logo">

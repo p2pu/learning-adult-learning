@@ -1,5 +1,6 @@
 ---
-title: How will this course work?
+layout: course_page
+title: About Learning Family Learning
 ---
 
 ## How will this course work?
