@@ -1,0 +1,16 @@
+---
+layout: course_page
+extra_css: []
+---
+
+<ul>
+{% for p in site.pages %}
+  {% assign url=p.url|remove_first:'/'|split:'/'|first %}
+  {% if url == "articles" %}
+    {% if p.url != page.url %}
+    <li><a href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a></li>
+    {% endif %}
+  {% endif %}
+
+{% endfor %}
+</ul>
