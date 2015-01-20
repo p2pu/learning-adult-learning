@@ -22,4 +22,30 @@
 @import "landing";
 @import "calendar";
 
+.jumbotron{
+    background-repeat: repeat, no-repeat;
+    background-position: left top, center top;
+    background-size: cover;
+}
 
+.p2pu-footer{
+    .supported-by {
+        ul {
+            padding-left: 0;
+        }
+        li {
+            height: 34px;
+            margin-right: 0.5em;
+            display: inline-block;
+        }
+        img {
+            max-height: 100%;
+        }
+        a {
+            border: none;
+        }
+    }
+    #p2pu-logo {
+        //background: url("{{site.baseurl}}/img/p2pu-logo.png") no-repeat scroll center center / contain transparent;
+    }
+}
