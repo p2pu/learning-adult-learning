@@ -24,17 +24,16 @@ layout: base
           <h2>Join a Cohort</h2>
           <p><strong>SIGN-UP</strong> to become a member of the cohort participating in Learning Family Learning. It's better together! </p>
           <div id="mc_embed_signup">
-            <form role="form" id="id-form-signup" action="http://lfl.herokuapp.com/api/signup/" method="POST">
+            {% include signup.html %}
+            <!--form role="form" id="id-form-signup" action="http://lfl.herokuapp.com/api/signup/" method="POST">
               <div class="form-group">
-                <!--label for="name-input">Name</label-->
                 <input class="form-control" name="name" id="name-input" placeholder="What should we call you?" type="text">
               </div>
               <div class="form-group">
-                <!--label for="email-input">Email address</label-->
                 <input class="form-control" name="email" id="email-input" placeholder="Where should we send you email?" type="email">
               </div>
               <button type="submit" class="btn btn-success btn-signup">Sign Up</button>
-            </form>
+            </form-->
           </div>
         </div>
       </div>

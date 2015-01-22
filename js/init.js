@@ -16,6 +16,25 @@ var P2PU = window.P2PU || {};
 				iconUp: 'fa fa-chevron-down',
 				iconDown: 'fa fa-chevron-up'
 			});
+
+            var signupForm = $('#id-form-signup');
+            if (signupForm.length){
+                signupForm.submit(function(event){
+                    $('#signup-form-error').addClass('hidden');
+                    event.preventDefault();
+                    $('#id-form-signup :submit').button('loading')
+                    $.post(signupForm.attr('action'), signupForm.serialize()).done(function() {
+                        window.location = '/signedup/';
+                    })
+                    .fail(function() {
+                        $('#signup-form-error').removeClass('hidden');
+                    })
+                    .always(function() {
+                        $('#id-form-signup :submit').button('reset')
+                    });
+                });
+            }
+
 		});
 	};
 
