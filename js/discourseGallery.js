@@ -12,10 +12,11 @@ window.discourseGallery = (function($, discourse){
                 discourse.getPost(forum_url, post_id, function(post){
                     console.log(post_id);
                     var clone = template.clone();
-                    clone.find('.title').text('Template title');
+                    //clone.find('.title').text('Template title');
                     clone.find('.author').text(post.name);
                     clone.find('.post-link').attr('href', forum_url + '/t/' + post.topic_id + '/' + post.post_number);
-                    clone.find('.post-image').attr('src', forum_url + post.avatar_template.replace('{size}', '45'));
+                    clone.find('.profile-image').attr('src', forum_url + post.avatar_template.replace('{size}', '45'));
+                    clone.find('.post-text').html(post.cooked);
                     container.append(clone);
                 });
             });
