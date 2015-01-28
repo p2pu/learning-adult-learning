@@ -1,31 +1,129 @@
+img {
+	max-width: 100%;
+}
+
 section {
-	margin: 3em 0;
+	//margin: 3em 0;
 	font-size: large;
 	line-height: 1.8;
 }
 
-.light-section{
+.light-section {
 	background-color: $white;
 
-	hr{
+	hr {
 		border-color: $gray-lighter;
 	}
 }
-.dark-section{
+
+.dark-section {
 	background-color: $gray-lighter;
 
-	hr{
+	hr {
 		border-color: $white;
 	}
 }
+
 .jumbotron {
-	background: $jumbotron-color;
-	background-position: bottom center;
-	background-repeat: no-repeat;
-	background-image: url('../img/#{$jumbotron-image}');
+	background-color: $gray-darker;
+	background: url('../img/#{$jumbotron-image}') bottom center no-repeat;
 	background-size: auto;
 	color: $white;
 	position: relative;
+	padding: 60px 0 0 0;
+	border-bottom: 230px solid #444;
+	padding-bottom: 20px;
+
+	.heading {
+		text-align: center;
+	}
+
+	.subheading {
+		margin: 30px auto;
+		font-size: 1em;
+		text-align: center;
+	}
+
+	@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+		border-bottom-width: 140px;
+	}
+
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+		border-bottom-width: 140px;
+	}
+
+	@media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-device-width: 1024px) and (min-device-width: 768px) and (orientation: landscape) {
+		margin-bottom: 60px;
+	}
+}
+
+.signup {
+	position: relative;
+
+	.cta-pointer {
+		height: 145px;
+		background: url(../img/cta-pointer-mobile.png) no-repeat 0 0;
+
+		@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+			background-position: center 0;
+		}
+
+		@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+			background-position: center 0;
+		}
+
+		@media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-device-width: 1024px) and (min-device-width: 768px) and (orientation: landscape) {
+			background: url(../img/cta-pointer.png) no-repeat 0 0;
+			margin-bottom: 50px;
+		}
+
+		@media (min-width: 1025px) {
+			background: url(../img/cta-pointer.png) no-repeat 0 0;
+		}
+	}
+
+	.signup-form {
+		padding: 10px;
+		background: linear-gradient(to bottom, red 0%, white 350%);
+		border: 10px solid white;
+		position: relative;
+
+		color: white;
+		z-index: 1;
+
+		@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+			border-radius: 50%;
+			padding: 110px;
+		}
+
+		@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+			border-radius: 50%;
+			padding: 110px;
+		}
+
+		@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+			padding: 85px;
+			border-radius: 50%;
+			box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.3);
+		}
+
+		@media (min-width: 1025px) {
+			padding: 85px;
+			margin: 0 0 -354px auto;
+			border-radius: 50%;
+			box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.3);
+		}
+	}
+}
+
+.subhead {
+	//width: 35%;
+	font-size: 1.2em;
+	line-height: 2;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	bottom: -221px;
 
 	a {
 		color: #fcfcfc;
@@ -38,28 +136,116 @@ section {
 		text-decoration: none;
 	}
 
+	@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+		bottom: -120px;
+		font-size: 1em;
+	}
+
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+		bottom: -120px;
+		font-size: 1em;
+	}
+
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+		bottom: -160px;
+		font-size: 1em;
+	}
+
+	@media (min-width: 1025px) {
+		position: relative;
+		bottom: -200px;
+	}
 }
 
-.jumbotron header h1 {
-	font-family: $font-family-sans-serif;
-	font-size: 4em;
+.topic-list {
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+		text-align: center;
+	}
+
+	@media (min-width: 1025px) {
+		text-align: center
+	}
 }
 
-.calendar{
-	background-color: $white;
-	padding: 50px 0 70px 0;
+.thumbnail {
+	&:hover {
+		text-decoration: none;
+	}
+	.caption {
+		font-size: 0.9em;
+
+		p {
+			margin-top: 15px;
+		}
+	}
+	.caption-title {
+		font-size: 1.2em;
+		border-bottom: 1px dotted $link-color;
+
+		&:hover {
+			border-bottom-color: transparent;
+			text-decoration: none;
+		}
+	}
 }
 
-.people {
-	margin-bottom: 0;
+.section-title {
+	text-align: center;
+
+	@media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-device-width: 1024px) and (min-device-width: 768px) and (orientation: landscape) {
+		text-align: left;
+	}
+
+	@media (min-width: 1025px) {
+		text-align: left;
+	}
 }
 
-.people li {
-	margin: 30px 10px;
+.event-wrap {
+	width: 100%;
+	margin: 0 0 20px 0;
+
+	@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+		width: 40%;
+	}
+
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+		width: 40%;
+	}
+
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+		width: 21%;
+	}
+
+	@media (min-width: 1025px) {
+		width: 21%;
+	}
 }
 
-.people img {
-	max-width: 100%;
-	height: 85px;
-	width: 85px;
+.support-logo {
+	text-align: center;
+	margin: 50px auto;
+
+	@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+		margin: 15px;
+	}
+
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+		float: none;
+		display: inline-block;
+		margin: 15px;
+	}
+
+	@media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-device-width: 1024px) and (min-device-width: 768px) and (orientation: landscape) {
+		//float: none;
+		//display: inline-block;
+		margin: 15px;
+	}
+
+	@media (min-width: 1025px) {
+		float: left;
+		display: inherit;
+		margin: 15px;
+	}
+
 }
