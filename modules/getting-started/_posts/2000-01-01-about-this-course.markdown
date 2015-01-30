@@ -1,5 +1,5 @@
 ---
-title: Frequently asked questions?
+title: About this course?
 ---
 
 # Frequently asked questions

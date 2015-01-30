@@ -23,10 +23,13 @@
 					<li class="dropdown {% if page.categories[1] == module %}active{% endif %} {% if forloop.first %}first{% endif %} {% if forloop.last %}last{% endif %}">
 						<a href="{{ site.baseurl }}{{ first_post.url }}"
 						   class="dropdown-item">
-							{{ module }}
+							{{ module | replace: '-', ' ' }}
 						</a>
 					</li>
 				{% endfor %}
+        <li class="{% if page.url == "/articles/index.html" %}active{% endif %}">
+					<a href="{{ site.baseurl }}/articles/">Articles</a>
+				</li>
 				<li>
 					<a href="http://discourse.p2pu.org/c/learning-family-learning" target="_blank">Discussion</a>
 				</li>
