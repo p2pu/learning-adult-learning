@@ -4,9 +4,9 @@ title: Learning to learn together
 headline: Learning how we can learn better together
 date: 2013-01-20
 author: June Ahn
-thumbnail: thumbnail-rasd.jpg
+thumbnail: /img/articles/thumbnail-rasd.jpg
 thumbnail-contrib: Feedback by giulia.forsythe, on Flickr
-featured-image: bgheader-rasd.jpg
+featured-image: /img/articles/bgheader-rasd.jpg
 featured-image-contrib: Feedback by giulia.forsythe, on Flickr
 description: "Real-life problems often have dozens of potential solutions. As long as there is one right answer, we’re competing for a scarce amount of knowledge."
 ---
@@ -29,7 +29,7 @@ performance in order to design assessments that open rather than close opportuni
 > Audrey Watters  
 
 
-![Girl meets computer, CC BY SA](/img/content/rasd/girl_on_computer.jpg "Girl meets computer, CC BY SA")
+![Girl meets computer, CC BY SA]({{site.baseurl}}/img/articles/rasd/girl_on_computer.jpg "Girl meets computer, CC BY SA")
 
 Nearly 25 years ago, Sherry Turkle and Seymour Papert offered us another way to recognize how 
 people learn. Their seminal piece “[Epistemological Pluralism](http://www.papert.org/articles/EpistemologicalPluralism.html)”
@@ -61,7 +61,7 @@ anxiety, commonly called stereotype threat, can inhibit the performance of those
  group (Steele, Spencer & Aronson, 2002). If you’re female and have ever walked into a room of 
  all males to give a technical talk, you’re probably familiar with the sensation.
 
-![Rethinking Gender and Assessment, CC BY SA](/img/content/rasd/Rethinking_Gender_and_Assessment.png "CC BY SA")
+![Rethinking Gender and Assessment, CC BY SA]({{site.baseurl}}/img/articles/rasd/Rethinking_Gender_and_Assessment.png "CC BY SA")
 
 We want learners to perform at the best level of their ability. So, 
 let’s see how stereotype threat appears in assessment and web tools, 
@@ -100,7 +100,7 @@ A few months ago I came across David A. Bank’s stellar article “[Very Seriou
 New Inquiry. In deconstructing the interfaces of various online communities, 
 he pointed the graphic on the right:
 
-![Gender Distribution on social networks, CC BY SA](/img/content/rasd/gender_distribution_on_social_network.png "CC BY SA")
+![Gender Distribution on social networks, CC BY SA]({{site.baseurl}}/img/articles/rasd/gender_distribution_on_social_network.png "CC BY SA")
 
 Take note of the platforms on the top and the bottom of the graph. Pinterest, Goodreads, Tumblr, 
 and Twitter feature interface gestures of support and quality via sharing: repinning, retweeting,
@@ -128,14 +128,14 @@ promotes higher achievement than competition, 8 found the reverse, and 36 found 
  
 Even if competition possibly alienates women, it doesn’t produce better results for anyone.
 
-![Mathblast ScreenGrab, CC BY SA](/img/content/rasd/mathblast.png "Mathblast Screengrab, CC BY SA")
+![Mathblast ScreenGrab, CC BY SA]({{site.baseurl}}/img/articles/rasd/mathblast.png "Mathblast Screengrab, CC BY SA")
 
 If we look at the education landscape, we can see evidently that “gamification” has taken hold. 
 While it’s entirely possible to design cooperative games—I look to alternate reality games in 
 particular—in the ed-tech world, competition has become commonplace. Points, 
 leaderboards and winning are frequently used to spark engagement (how does one win at learning?).
 
-![Zondle ScreenGrab, CC BY SA](/img/content/rasd/zondle.png "Zondle Screengrab, CC BY SA")
+![Zondle ScreenGrab, CC BY SA]({{site.baseurl}}/img/articles/rasd/zondle.png "Zondle Screengrab, CC BY SA")
 
 But how do we assess cooperative learning and collaboration? How do we create interfaces that 
 nurture networked learning?
@@ -153,7 +153,7 @@ young “Scratchers” create their own design projects, they are encouraged to 
 community for feedback. Many of Scratch’s design choices nurture cooperation, 
 among them “remix trees” which show how many Scratchers have used a project for inspiration.
 
-![Scratch ScreenGrab, CC BY SA](/img/content/rasd/scratch.png "Scratch Screengrab, CC BY SA")
+![Scratch ScreenGrab, CC BY SA]({{site.baseurl}}/img/articles/rasd/scratch.png "Scratch Screengrab, CC BY SA")
 
 These trees show how projects are interconnected. Students’ projects are never 100% “theirs”–they
  always possess the potential to be adapted and built upon, and stand upon the shoulders of 
@@ -166,7 +166,7 @@ In the Peer 2 Peer University community, Dave Cormier recently launched the “[
  each other. In order to “measure” the connectedness of the community, 
  he used Martin Hawksey’s TAGSExplorer tool to visualize their network at a high level.
  
- ![Rhizomatic learning net, CC BY SA](/img/content/rasd/rhizomatic_learning.png "Rhizomatic learning net, CC BY SA")
+ ![Rhizomatic learning net, CC BY SA]({{site.baseurl}}/img/articles/rasd/rhizomatic_learning.png "Rhizomatic learning net, CC BY SA")
  
 From there, Cormier prompted learners to see singletons in the community network and reach out to
  them. Collaboration and cooperation was baked into the course structure. Learners could see the
