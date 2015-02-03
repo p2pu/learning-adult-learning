@@ -3,14 +3,19 @@ layout: course_page
 extra_css: []
 ---
 
-<ul>
+<div class="row">
 {% for p in site.pages %}
   {% assign url=p.url|remove_first:'/'|split:'/'|first %}
   {% if url == "articles" %}
     {% if p.url != page.url %}
-    <li><a href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a></li>
+    <div class="col-lg-12">
+      <a href="{{site.baseurl}}{{ p.url }}">
+        <h1>{{p.title}}</h1>
+      </a>
+      <img src="{{site.baseurl}}/img/content/{{p.featured-image}}">
+    </div>
     {% endif %}
   {% endif %}
 
 {% endfor %}
-</ul>
+</div>
