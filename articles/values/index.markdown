@@ -3,10 +3,10 @@ layout: article
 title: Why values matter
 headline: Rethinking Assessment, Supporting Diversity
 date: 2013-01-20
-author: Vanessa Gennarelli
-thumbnail: thumbnail-rasd.jpg
+author: June Ahn
+thumbnail: /img/articles/thumbnail-rasd.jpg
 thumbnail-contrib: Feedback by giulia.forsythe, on Flickr
-featured-image: bgheader-rasd.jpg
+featured-image: /img/articles/bgheader-rasd.jpg
 featured-image-contrib: Feedback by giulia.forsythe, on Flickr
 description: "Real-life problems often have dozens of potential solutions. As long as there is one right answer, we’re competing for a scarce amount of knowledge."
 ---
