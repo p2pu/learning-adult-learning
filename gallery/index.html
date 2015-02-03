@@ -1,23 +1,10 @@
 ---
 layout: base
 extra_js: 
-  - "/js/discourse.js"
   - "/js/discourseGallery.js"
+  - "/js/moduleGallery.js"
 extra_css:
   - "/css/gallery.css"
 ---
 
-<div class="container">
-  <div id="gallery" class="gallery-content row">
-    <div class="post col-lg-4 col-md-6 col-sm-6">
-      <a class="post-link" href="http://example.net" target="_blank"> 
-      <div class="container">
-        <img class="profile-image" src="http://placehold.it/500x500">
-        <h4 class="author">Author</h4>
-        <!--h2 class="title">Title</h2-->
-        <p class="post-text">Post body text.</p>
-      </div> 
-      </a> 
-    </div>
-  </div>
-</div>
+{% include category_gallery.html forum_url="http://discourse.p2pu.org" category="writing-for-change" %}

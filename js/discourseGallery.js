@@ -1,21 +1,38 @@
-window.discourseGallery = (function($, discourse){
+window.discourseGallery = (function($){
     'use strict';
 
-    function init(galleryContainerId){
-        var container = $('#' + galleryContainerId);
+    function getPost(forum_url, post_id, cb){
+        var url = forum_url + '/posts/' + post_id + '.json';
+        $.getJSON(url, cb);
+    }
+
+
+    function getTopic(forum_url, topic_id, cb){
+        var url = forum_url + '/t/' + topic_id + '.json';
+        $.getJSON(url, cb);
+    }
+
+
+    function getCategory(forum_url, category, cb){
+        var url = forum_url + '/c/' +  category + '/l/latest.json';
+        $.getJSON(url, cb);
+    }
+
+
+    function loadTopicGallery(config){
+        var container = $('#' + config.containerId);
         var template = $(container.children()[0]).clone();
-        var forum_url = 'http://discourse.p2pu.org';
         container.children().remove();
 
-        discourse.getTopic(forum_url, 156, function(topic){
+        getTopic(config.forumUrl, config.topicId, function(topic){
             topic.post_stream.stream.forEach(function(post_id){
-                discourse.getPost(forum_url, post_id, function(post){
+                getPost(config.forumUrl, post_id, function(post){
                     console.log(post_id);
                     var clone = template.clone();
                     //clone.find('.title').text('Template title');
                     clone.find('.author').text(post.name);
-                    clone.find('.post-link').attr('href', forum_url + '/t/' + post.topic_id + '/' + post.post_number);
-                    clone.find('.profile-image').attr('src', forum_url + post.avatar_template.replace('{size}', '45'));
+                    clone.find('.post-link').attr('href', config.forumUrl + '/t/' + post.topic_id + '/' + post.post_number);
+                    clone.find('.profile-image').attr('src', config.forumUrl + post.avatar_template.replace('{size}', '45'));
                     clone.find('.post-text').html(post.cooked);
                     container.append(clone);
                 });
@@ -23,6 +40,34 @@ window.discourseGallery = (function($, discourse){
         });
     }
 
-    init('gallery');
+    
+    function loadCategoryGallery(config){
+        var container = $('#' + config.containerId);
+        var template = $(container.children()[0]).clone();
+        container.children().remove();
+
+        getCategory(config.forumUrl, config.category, function(category){
+            // TODO add button and callback to load more
+            category.topic_list.topics.forEach(function(topic){
+                var url = config.forumUrl + '/t/' + topic.id + '/1.json'
+                $.getJSON(url, function(topic){
+                    //console.log(post_id);
+                    var post = topic.post_stream.posts[0];
+                    var clone = template.clone();
+                    clone.find('.title').text(topic.title);
+                    clone.find('.author').text(post.name);
+                    clone.find('.post-link').attr('href', config.forumUrl + '/t/' + post.topic_id + '/' + post.post_number);
+                    clone.find('.profile-image').attr('src', config.forumUrl + post.avatar_template.replace('{size}', '45'));
+                    clone.find('.post-text').html(post.cooked);
+                    container.append(clone);
+                });
+            });
+        });
+    }
+
+    return {
+        loadTopicGallery: loadTopicGallery,
+        loadCategoryGallery: loadCategoryGallery
+    }
 
 })(jQuery, window.discourse);

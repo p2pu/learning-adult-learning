@@ -1,0 +1,11 @@
+---
+title: "Gallery"
+extra_js: 
+  - "/js/discourseGallery.js"
+  - "/js/moduleGallery.js"
+extra_css:
+  - "/css/gallery.css"
+---
+# Gallery
+
+{% include category_gallery.html forum_url="http://discourse.p2pu.org" category="why-open" %}
