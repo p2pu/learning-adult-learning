@@ -2,7 +2,7 @@
 title: About this course?
 ---
 
-### Welcome!
+# Frequently asked questions
 
 ## How does this work?
 Don't know, do you?
