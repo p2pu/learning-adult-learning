@@ -4,9 +4,9 @@ title: The influence of space on learning
 headline: How the spaces we are in influence learning.
 date: 2013-01-20
 author: June Ahn
-thumbnail: /img/articles/thumbnail-rasd.jpg
+thumbnail: thumbnail-rasd.jpg
 thumbnail-contrib: Feedback by giulia.forsythe, on Flickr
-featured-image: /img/articles/bgheader-rasd.jpg
+featured-image: bgheader-rasd.jpg
 featured-image-contrib: Feedback by giulia.forsythe, on Flickr
 description: "Real-life problems often have dozens of potential solutions. As long as there is one right answer, we’re competing for a scarce amount of knowledge."
 ---
