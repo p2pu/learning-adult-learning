@@ -1,5 +1,5 @@
 <!-- Navigation -->
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation" data-spy="affix" data-offset-top="10">
 
 	<!-- Brand and toggle get grouped for better mobile display -->
 	<div class="navbar-header">
@@ -12,9 +12,11 @@
 	<div class="container">
 		<div class="collapse navbar-collapse" id="p2pu-menu">
 			<ul class="nav navbar-nav">
-				<li>
-					<a href="{{ site.baseurl }}/"><i class="fa fa-home"></i></a>
+				<li {% if page.url == "/index.html" %}class="active"{% endif %}>
+					<a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/img/LFL-Logo.png" alt="Home link" /></a>
 				</li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
         <li class="{% if page.url == "/about/index.html" %}active{% endif %}">
 					<a href="{{ site.baseurl }}/about/">About</a>
 				</li>

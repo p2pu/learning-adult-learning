@@ -308,7 +308,6 @@ $navbar-light: $gray-snow;
 			}
 			& > li.active a {
 				color: $gray-light;
-				background-color: darken($brand-primary, 10%);
 			}
 
 			@media (min-width: $grid-float-breakpoint) {
